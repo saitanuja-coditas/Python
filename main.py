@@ -5,7 +5,7 @@ import mysql.connector as mariadb
 import os
 import operator
 app = Flask(__name__)
-mariadb_connect = mariadb.connect(user='chooseAUserName', password='chooseAPassword', databse='Login')
+mariadb_connect = mariadb.connect(user='chooseAUserName', password='chooseAPassword', database='Login')
 @app.route('/')
 def home():
   if not session.get('logged_in'):
